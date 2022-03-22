@@ -216,10 +216,10 @@ namespace Lab2_Afanaseva
             //Голова кошки
             Gl.glBegin(Gl.GL_LINE_LOOP);
 
-            Gl.glVertex2f(x0 + 0.641f * W, y0 + 0.528f * H);
-            Gl.glVertex2f(x0 + W, y0 + 0.528f * H);
-            Gl.glVertex2f(x0 + W, y0 + 0.139f * H);
-            Gl.glVertex2f(x0 + 0.641f * W, y0 + 0.139f * H);
+            Gl.glVertex2f(29, 22);
+            Gl.glVertex2f(43, 22);
+            Gl.glVertex2f(43, 8);
+            Gl.glVertex2f(29, 8);
 
             Gl.glEnd();
 
@@ -246,25 +246,25 @@ namespace Lab2_Afanaseva
             //Рот
             Gl.glBegin(Gl.GL_LINE_STRIP);
 
-            Gl.glVertex2f(x0 + 0.705f * W, y0 + 0.236f * H);
-            Gl.glVertex2f(x0 + 0.756f * W, y0 + 0.181f * H);
-            Gl.glVertex2f(x0 + 0.885f * W, y0 + 0.181f * H);
-            Gl.glVertex2f(x0 + 0.936f * W, y0 + 0.236f * H);
+            Gl.glVertex2f(31.5f, 11.5f);
+            Gl.glVertex2f(33.5f, 9.5f);
+            Gl.glVertex2f(38.5f, 9.5f);
+            Gl.glVertex2f(40.5f, 11.5f);
 
             Gl.glEnd();
 
             //Нос
             Gl.glBegin(Gl.GL_LINE_LOOP);
 
-            Gl.glVertex2f(x0 + 0.782f * W, y0 + 0.33f * H);
-            Gl.glVertex2f(x0 + 0.821f * W, y0 + 0.359f * H);
-            Gl.glVertex2f(x0 + 0.859f * W, y0 + 0.308f * H);
+            Gl.glVertex2f(x0 + 0.782f * W, y0 + 0.306f * H);
+            Gl.glVertex2f(x0 + 0.821f * W, y0 + 0.361f * H);
+            Gl.glVertex2f(x0 + 0.859f * W, y0 + 0.306f * H);
 
             Gl.glEnd();
 
 
             //Создаем массивы для прорисовки глаз
-            float[,] crdEyesLeft = new float[6, 2] { { x0 + 0.692f*W, y0 + 0.417f * H }, { x0 + 0.718f * W, y0 + 0.41f * H }, { x0 + 0.769f * W, y0 + 0.444f * H }, { x0 + 0.795f * W, y0 + 0.417f * H }, { x0 + 0.769f * W, y0 + 0.359f * H }, { x0 + 0.718f * W, y0 + 0.389f * H } };
+            float[,] crdEyesLeft = new float[6, 2] { { x0 + 0.692f * W, y0 + 0.417f * H }, { x0 + 0.718f * W, y0 + 0.444f * H }, { x0 + 0.769f * W, y0 + 0.444f * H }, { x0 + 0.795f * W, y0 + 0.417f * H }, { x0 + 0.769f * W, y0 + 0.389f * H }, { x0 + 0.718f * W, y0 + 0.389f * H } };
             // Отсюда  исправить коэффиценты при H ( * 25 / 36)
             float[,] crdPupilLeft = new float[6, 2] { { x0 + 0.744f * W, y0 + 0.444f * H }, { x0 + 0.769f * W, y0 + 0.431f * H }, { x0 + 0.769f * W, y0 + 0.403f * H }, { x0 + 0.744f * W, y0 + 0.389f * H }, { x0 + 0.718f * W, y0 + 0.403f * H }, { x0 + 0.718f * W, y0 + 0.431f * H } };
             float[,] crdEyesRight = new float[6, 2] { { x0 + 0.872f * W, y0 + 0.417f * H }, { x0 + 0.897f * W, y0 + 0.444f * H }, { x0 + 0.949f * W, y0 + 0.444f * H }, { x0 + 0.974f * W, y0 + 0.417f * H }, { x0 + 0.949f * W, y0 + 0.389f * H }, { x0 + 0.897f * W, y0 + 0.389f * H } };
